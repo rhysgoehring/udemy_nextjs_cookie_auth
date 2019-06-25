@@ -1,0 +1,17 @@
+{
+  "name": "next-cookie-auth",
+  "version": "1.0.0",
+  "description": "Cookie auth with Next.js Server Side Rendering",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rhys Goehring",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
