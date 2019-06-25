@@ -4,7 +4,7 @@
   "description": "Cookie auth with Next.js Server Side Rendering",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node server.js"
   },
   "author": "Rhys Goehring",
   "license": "ISC",
