@@ -4,7 +4,7 @@
   "description": "Cookie auth with Next.js Server Side Rendering",
   "main": "server.js",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "nodemon server.js"
   },
   "author": "Rhys Goehring",
   "license": "ISC",
