@@ -53,7 +53,7 @@ app.prepare().then(() => {
     };
     res.cookie('token', userData, COOKIE_OPTIONS);
     res.json(userData);
-  });
+  }); 
 
   // GET PROFILE ROUTE:
   server.get('/api/profile', async (req, res) => {
