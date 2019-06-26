@@ -1,13 +1,15 @@
 import Layout from '../components/Layout';
 import LoginForm from '../components/LoginForm';
+import { authInitialProps } from '../lib/auth';
 
-const Login = () => {
+const Login = props => {
   return (
-  <Layout title="Login">
+    <Layout title="Login" {...props}>
       <LoginForm />
-  </Layout>
-
+    </Layout>
   );
 };
+
+Login.getInitialProps = authInitialProps();
 
 export default Login;
