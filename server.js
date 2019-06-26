@@ -53,7 +53,13 @@ app.prepare().then(() => {
     };
     res.cookie('token', userData, COOKIE_OPTIONS);
     res.json(userData);
-  }); 
+  });
+
+  // Logout Route
+  server.post('/api/logout', (req, res) => {
+    res.clearCookie('token', COOKIE_OPTIONS);
+    res.sendStatus(204);
+  });
 
   // GET PROFILE ROUTE:
   server.get('/api/profile', async (req, res) => {
@@ -78,6 +84,5 @@ app.prepare().then(() => {
 
   server.listen(port, err => {
     if (err) throw err;
-    console.log(`Listening on PORT ${port}`);
   });
 });

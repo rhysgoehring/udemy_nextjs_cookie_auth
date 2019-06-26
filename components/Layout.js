@@ -1,7 +1,7 @@
 import Link from 'next/link';
+import { logoutUser } from "../lib/auth";
 
 const Layout = ({ children, title, auth }) => {
-  console.log('auth: ', auth);
   const { user = {} } = auth || {};
 
   return (
@@ -19,7 +19,7 @@ const Layout = ({ children, title, auth }) => {
               <Link href="/profile">
                 <a>Profile</a>
               </Link>
-              <button>Logout</button>
+              <button onClick={logoutUser}>Logout</button>
             </React.Fragment>
           ) : (
             <Link href="/login">

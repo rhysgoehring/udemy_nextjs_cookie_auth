@@ -3,7 +3,6 @@ import Layout from '../components/Layout';
 import { authInitialProps } from '../lib/auth';
 
 export default function Index(props) {
-  console.log('props', props);
   return (
     <Layout title="Home" {...props}>
       <Link href="/profile">
